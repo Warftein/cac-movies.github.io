@@ -1,0 +1,356 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    font-size: 16px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    
+    --tamanio: 25px;
+    --texto-blanco: #ffffff;
+    --color-primario: #9f3647;
+    --fondo-negro: #0a0a0a;
+    --gris: #808080;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.header {
+    background-color: var(--color-primario);
+    width: 100VW;
+    box-sizing: border-box;
+    height: 10vh;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+}
+.header_logo {
+    display: flex;
+    align-items: center;
+}
+
+.header_logo img {
+    width: auto; 
+    height: 1.5em; 
+    margin-right: 5px; 
+    margin-left: 10px; 
+    filter: invert(100%); 
+}
+
+.header_logo h3 {
+    font-weight: 100; 
+    color: var(--texto-blanco); 
+    font-size: .9em; 
+}
+
+.header_menu {
+    padding-left: 4vw;
+    display: flex;
+    width: 80vw;
+    justify-content: flex-end;
+    margin-right: 10px; 
+}
+
+.header_menu a {
+    text-decoration: none;
+    color: var(--texto-blanco);
+    display: inline-block;
+    font-size: 0.8em; 
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.header_menu a:last-child {
+    margin-left: 0; 
+}
+
+.header_menu a:hover {
+    background-color: var(--color-primario);
+    background-origin: inherit;
+    box-shadow: 1px 1px 1px 1px var(--fondo-negro);
+}
+
+.fondoNegro {
+    background-color: var(--fondo-negro);
+}
+
+.ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.textoBlanco {
+    color: var(--texto-blanco);
+}
+
+.main {
+    background-image: linear-gradient(to right top, #4e4b4b8a, #0000008a), url(../imgs/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main h1 {
+    font-size: 3rem;    
+    padding-top: 5vh;
+}
+
+.main h2 {
+    font-size: 2rem;
+    padding-top: 5vh;
+    font-weight: 300;
+}
+
+.main button{
+    width: 10vw;
+    min-width: 20vw;
+    height: 10vh;
+    min-height: 50PX;
+    margin-top: 5vh;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: 700;
+    background-color: #9f3647;
+}
+
+header {
+    font-size: 19px;
+}
+
+
+h3 {
+    color: green;
+    font-size: 1.17em; 
+}
+
+.form-busqueda {
+    background-color: var(--fondo-negro);
+    color: var(--texto-blanco);
+    height: 50vh;
+    padding-top: 15vh;
+    text-align: center;
+}
+.form-busqueda h2{
+    font-size: 2rem;
+}
+.form-busqueda form {
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+}
+.form-busqueda form input {
+    border-radius: 20px;
+    padding: 10px 10px;
+    border: none;
+    color: var(--gris);
+    text-transform: capitalize;
+    width: 50vw;
+}
+.form-busqueda form button {
+    border-radius: 20px;
+    padding: 10px 10px;    
+    min-width: 10vw;
+    border: 2px solid var(--texto-blanco);
+    background-color: var(--color-primario);
+    color: var(--texto-blanco);
+    margin-left: 1vw;
+}
+.form-busqueda hr {    
+    width: 70vw;
+    margin: 0 auto;
+    border: 1px solid var(--color-primario)
+}
+
+.form-busqueda form button:hover {
+    width: 10.5vw;
+}
+
+
+
+#goBack {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 9999; 
+    color: var(--texto-blanco);
+    
+}   
+
+.flex-container {
+    background-color: var(--color-primario);
+    color: var(--texto-blanco);
+    display: flex;    
+    justify-content: center; 
+    min-height: 20vh;
+    align-items: center;
+    flex-direction: row-reverse;
+
+}
+
+
+@media print {
+    :root {
+        --color-primario: #369f3d;
+    }
+    
+}
+
+
+.tendencias {
+    background-color: var(--fondo-negro);
+    color: var(--texto-blanco);
+    padding: 20px;
+    text-align: center;
+}
+
+.tendencias h2 {
+    font-size: 2rem;
+    margin-bottom: 70px;
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 20px;
+    justify-content: center; 
+}
+
+.pelicula {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.pelicula a {
+    display: block;
+    text-decoration: none;
+    color: inherit; 
+}
+
+
+.pelicula a:hover,
+.pelicula a:focus {
+    outline: none;
+}
+
+.pelicula:hover {
+    border: 2px solid salmon; 
+}
+
+.pelicula a:hover h3 {
+    color: #ccc; 
+}
+
+.pelicula img {
+    width: 200px; 
+    height: 300px; 
+    border-bottom: 2px solid var(--color-primario); 
+}
+
+
+.pelicula h3 {
+    padding: 10px;
+    font-size: 1.2rem;
+    color: var(--texto-blanco); 
+}
+
+.botones-navegacion {
+    margin-top: 20px; 
+}
+
+.botones-navegacion button {
+    width: 100px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--color-primario); 
+    color: var(--texto-blanco); 
+    font-weight: bold;
+    margin: 0 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.botones-navegacion button:hover {
+    background-color: salmon; 
+}
+
+
+.registro-btn {
+    background-color: var(--color-primario);
+    color: var(--texto-blanco);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el color de fondo y el sombreado */
+
+    /* Sombra */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.registro-btn:hover {
+    background-color: #7f2d3c; 
+}
+
+.flex-item a {
+    text-decoration: none; 
+    color: var(--texto-blanco); 
+    margin-right: 20px; 
+}
+
+.flex-item a:hover {
+    text-decoration: none; 
+}
+
+section {
+    background-color: #f5f5f5; /* Color de fondo ajustado */
+    transition: opacity 0.5s ease; /* Transición suave de opacidad */
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+    pointer-events: auto;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="/imgs/Claqueta.png">
+    <title>Registro - CAC Movies</title>
+    <link rel="stylesheet" href="/styles/registro.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header_logo">
+            <a href="/index.html"> 
+                <img src="/imgs/cinta.png" alt="cinta">
+            </a>
+            <a href="/index.html">
+                <h3 class="textoBlanco">CAC - Movies</h3>
+            </a>
+        </div>
+    </header>
+
+    <div class="registro-container">
+        <h1>Crear una cuenta</h1>
+        <form action="#">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Crear cuenta</button>
+        </form>
+        <p>¿Ya tienes una cuenta? <a href="/html/login.html">Inicia sesión aquí</a></p>
+    </div>
+</body>
+</html>

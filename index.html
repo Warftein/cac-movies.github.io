@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="/imgs/Claqueta.png">
+    <title>CAC-Movies</title>
+    <!-- <script src="Javascript/javascript.js"></script> Este script se puede activar si lo desean -->
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header_logo">
+            <img src="imgs/cinta.png" alt="cinta">
+            <h3 class="textoBlanco">CAC - Movies</h3>
+        </div>
+        <div class="header_menu">
+            <a href="#" title="Ir a la página de tendencias" onclick="scrollToTendencias()">Tendencias</a>
+            <a href="html/registro.html" title="Registrarse en el sitio">Registrarse</a> 
+            <a href="/html/login.html" class="fondoNegro" title="Iniciar sesión">Iniciar Sesión</a>
+        </div>
+    </header>
+    <main>
+        <section class="main">
+            <h1 class="textoBlanco">Películas y series ilimitadas<br> en un solo lugar</h1>
+            <h2 class="textoBlanco">Disfruta donde quieras.<br> Cancela en cualquier momento</h2>
+            <a href="html/registro.html">
+                <button type="button" class="textoBlanco registro-btn">Regístrate</button>
+            </a>            
+        </section>
+        <section class="form-busqueda">
+            <h2>¿Qué estás buscando para ver?</h2>
+            <form action="./html/resultado-busqueda.html" id="frm">
+                <input type="search" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </form>
+            <hr>        
+        </section>
+        <section id="tendencias" class="tendencias">
+            <h2>Tendencias</h2>
+            <div class="catalogo">
+                <!-- Película 1 -->
+                <div class="pelicula">
+                    <a href="html/Jumanji.html">
+                        <img src="imgs/Jumanji.jpg" alt="Jumanji">
+                        <h3>Jumanji</h3>
+                    </a>
+                </div>
+                <!-- Película 2 -->
+                <div class="pelicula">
+                    <img src="imgs/Jurassic World.jpg" alt="Jurassic World">
+                    <h3>Jurassic World</h3>
+                </div>
+                <!-- Película 3 -->
+                <div class="pelicula">
+                    <img src="imgs/El Padrino.jpg" alt="El Padrino">
+                    <h3>El Padrino</h3>
+                </div>
+                <!-- Película 4 -->
+                <div class="pelicula">
+                    <img src="imgs/Matrix.jpg" alt="Matrix">
+                    <h3>Matrix</h3>
+                </div>
+                <!-- Película 5 -->
+                <div class="pelicula">
+                    <img src="imgs/Volver al Futuro.jpg" alt="Volver al Futuro">
+                    <h3>Volver al Futuro</h3>
+                </div>
+                <!-- Película 6 -->
+                <div class="pelicula">
+                    <img src="imgs/Mad Max 2.jpg" alt="Mad Max 2">
+                    <h3>Mad Max 2</h3>
+                </div>
+                <!-- Película 7 -->
+                <div class="pelicula">
+                    <img src="imgs/Avatar.jpg" alt="Avatar">
+                    <h3>Avatar</h3>
+                </div>
+                <!-- Película 8 -->
+                <div class="pelicula">
+                    <img src="imgs/Titanic.jpg" alt="Titanic">
+                    <h3>Titanic</h3>
+                </div>
+                <!-- Película 9 -->
+                <div class="pelicula">
+                    <img src="imgs/El Rey León.jpg" alt="El Rey León">
+                    <h3>El Rey León</h3>
+                </div>
+                <!-- Película 10 -->
+                <div class="pelicula">
+                    <img src="imgs/Inception.jpg" alt="Inception">
+                    <h3>Inception</h3>
+                </div>
+                <!-- Película 11 -->
+                <div class="pelicula">
+                    <img src="imgs/Forrest Gump.jpg" alt="Forrest Gump">
+                    <h3>Forrest Gump</h3>
+                </div>
+                <!-- Película 12 -->
+                <div class="pelicula">
+                    <img src="imgs/Interstellar.jpg" alt="Interstellar">
+                    <h3>Interstellar</h3>
+                </div>
+                <!-- Película 13 -->
+                <div class="pelicula">
+                    <img src="imgs/The Shawshank Redemption.jpg" alt="The Shawshank Redemption">
+                    <h3>The Shawshank Redemption</h3>
+                </div>
+                <!-- Película 14 -->
+                <div class="pelicula">
+                    <img src="imgs/The Dark Knight.jpg" alt="The Dark Knight">
+                    <h3>The Dark Knight</h3>
+                </div>
+                <!-- Película 15 -->
+                <div class="pelicula">
+                    <img src="imgs/Pulp Fiction.jpg" alt="Pulp Fiction">
+                    <h3>Pulp Fiction</h3>
+                </div>
+                <!-- Película 16 -->
+                <div class="pelicula">
+                    <img src="imgs/The Martian.jpg" alt="The Martian">
+                    <h3>The Martian</h3>
+                </div>
+                <!-- Película 17 -->
+                <div class="pelicula">
+                    <img src="imgs/Split.jpg" alt="Split">
+                    <h3>Split</h3>
+                </div>
+                <!-- Película 18 -->
+                <div class="pelicula">
+                    <img src="imgs/El Lobo de Wall Street.jpg" alt="El Lobo de Wall Street">
+                    <h3>El Lobo de Wall Street</h3>
+                </div>
+                <!-- Película 19 -->
+                <div class="pelicula">
+                    <img src="imgs/Yes Man.jpg" alt="Yes Man">
+                    <h3>Yes Man</h3>
+                </div>
+                <!-- Película 20 -->
+                <div class="pelicula">
+                    <img src="imgs/American Psycho.jpg" alt="American Psycho">
+                    <h3>American Psycho</h3>
+                </div>
+            </div>
+            <div class="botones-navegacion">
+                <button id="anterior" onclick="mostrarAnterior()">Anterior</button>
+                <button id="siguiente" onclick="mostrarSiguiente()">Siguiente</button>
+            </div>
+        </section>        
+        <section class="flex-container">
+            <div class="flex-item">
+                <a href="/contacto.html">Contáctanos</a>
+            </div>
+            <div class="flex-item">
+                <a href="/nosotros.html">Nosotros</a>
+            </div>
+        </section>        
+    </main>
+    <a href="#header">
+        <i class="fa fa-circle-up" id="goBack" title="Ir arriba"></i>
+    </a>
+    <script src="https://kit.fontawesome.com/181725805d.js" crossorigin="anonymous"></script>
+</body>
+</html>
